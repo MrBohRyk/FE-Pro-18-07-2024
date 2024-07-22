@@ -10,8 +10,26 @@
       let x = 6;
       let y = 14;
       let z = 4;
+      // x = y - x++ * z;
+      console.log("Початкові значення:");
+      console.log("x = " + x + ", y = " + y + ", z = " + z);
 
-      x = y - x++ * z;
+      // Спочатку обчислюється оператор інкременту x++. x++ означає, що ми використовуємо значення x (тобто 6), а потім збільшуємо його на 1. Отже, після цієї операції x стане 7
+      let tempX = x++;
+      console.log("Після x++: tempX = " + tempX + ", x = " + x);
+
+      // Потім обчислюється вираз tempX * z
+      let tempResult = tempX * z;
+      console.log("tempX * z = " + tempResult);
+
+      // Обчислюється вираз y - tempResult
+      x = y - tempResult;
+      console.log("y - tempResult = " + x);
+
+      // Кінцеві значення змінних
+      console.log("Кінцеві значення:");
+      console.log("x = " + x + ", y = " + y + ", z = " + z);
+
       console.log(
         "Після x = y - x++ * z x = " + x + ", y = " + y + ", z = " + z
       );

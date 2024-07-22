@@ -11,7 +11,25 @@
       let y = 14;
       let z = 4;
 
-      y /= x + (5 % z);
+      // y /= x + (5 % z);
+      console.log("Початкові значення:");
+      console.log("x = " + x + ", y = " + y + ", z = " + z);
+
+      // Ми обчислюємо залишок від ділення 5 на 4
+
+      let temp1 = 5 % z;
+      console.log("5 % z = " + temp1);
+
+      // Ми додаємо x і результат попереднього обчислення (temp1)
+
+      let temp2 = x + temp1;
+      console.log("x + (5 % z) = " + temp2);
+
+      // Ми ділимо y на результат попереднього обчислення (temp2)
+
+      y /= temp2;
+      console.log("y /= x + (5 % z): y = " + y);
+
       console.log(
         "Після y /= x + (5 % z) x = " + x + ", y = " + y + ", z = " + z
       );
