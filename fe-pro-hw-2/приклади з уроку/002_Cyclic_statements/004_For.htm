@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        //let num = parseFloat(prompt()); //50
+        // for ( Инициализация счетчика итераций; Условие; Изменение счетчика ) { Тело цикла }
+   
+       //let counter = 0
+/*
+        for (let counter = 0; counter < 3; ++counter) {
+            document.write("<p>Counter = " + counter);
+        }  
+                */
+
+
+        for(let row = 0; row < 10; row++){
+
+            for(let col = (0 + row + 1); col > 0; col--){
+                document.write("*&nbsp;&nbsp;")
+            }
+
+            document.write("<br>")
+        }
+
+
+      
+
+    </script>
+
+</body>
+
+</html>

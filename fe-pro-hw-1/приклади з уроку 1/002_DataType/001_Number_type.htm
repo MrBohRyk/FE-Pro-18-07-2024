@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number</title>
+</head>
+
+<body>
+    <!--
+
+   Всі числа зберігаються у форматі float64 – 8 байт з плаваючою точкою.
+    У цьому форматі не завжди можливі точні обчислення. https://metanit.com/go/tutorial/2.3.php
+
+        
+        NaN - не число
+        Number.MAX_VALUE - максимально допустиме значення в JavaScript +9007199254740992
+        Number.MIN_VALUE - мінімально допустиме значення JavaScript -9007199254740992
+        Number.NaN - не число
+        Number.POSITIVE_INFINITY - + нескінченність 1.7976931348623157E+10308
+        Number.NEGATIVE_INFINITY - - нескінченність -1.7976931348623157E+10308
+
+-->
+    <p>Здесь располагается разметка</p>
+
+    <script>
+
+        var a = 10;
+        var b = 0.8;
+        var c = a + b;
+
+        console.log("a + b = " + c);
+
+        console.log("Number.NaN = " + Number.NaN);
+        console.log("Number.MAX_VALUE = " + Number.MAX_VALUE );
+        console.log("Number.MIN_VALUE = " + Number.MIN_VALUE);
+        console.log("Number.POSITIVE_INFINITY = " + Number.POSITIVE_INFINITY );
+        console.log("Number.NEGATIVE_INFINITY = " + Number.NEGATIVE_INFINITY);
+
+    </script>
+</body>
+
+</html>

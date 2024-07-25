@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+       Оператор рівності "==" призначений для порівняння значень двох змінних,
+        при цьому необхідно пам'ятати про наступні правила:
+        
+             1. якщо одне значення null, а інше undefined - значення рівні.
+             2. якщо одне значення число, а друге рядок, то рядок перетворюватися на число і проводитись порівняння.
+             3. якщо одне значення true воно перетворюється на 1, якщо значення false воно перетворюватися на 0.
+
+-->
+        <script>
+
+            var a = 1;                
+            var b = "1";               
+            var c = "some";            
+            var d = 'some';            
+            var e = true;             
+            var res;
+    
+            res = a == b; // true
+            document.write("a равно b : " + res + "<br />");
+    
+            res = c == d; // ture
+            document.write("c равно d : " + res + "<br />");
+    
+            res = a == e; // true
+            document.write("a равно e : " + res + "<br />");
+    
+        </script>
+</body>
+</html>
+
+

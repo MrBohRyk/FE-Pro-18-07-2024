@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Логическое ИЛИ (||) </title>
+</head>
+
+<body>
+    <!--
+Логічне АБО (||) - повертає true,
+        якщо перший або другий операнд (або обидва) дорівнюють true.
+
+        Таблиця істинності логічного АБО (||):
+            true || true = true
+            false || true = true
+            true || false = true
+            false || false = false
+
+-->
+    <script>
+
+        var a = false;
+        var b = !!!false;
+
+        var res = a || b;
+        document.write("a || b = " + res + "<br />");
+
+        var x = 6, y = 14, z = 4;
+        console.log(x += y - x++ * z)
+        /*
+        1. виконується інкремент дає результат 6 (+1 потім, але не встигає)
+        2. 6 * z = 
+         */
+        x = 6, y = 14, z = 4;
+        console.log(z = --x - y * 5);
+        x = 6, y = 14, z = 4;
+    </script>
+</body>
+
+</html>

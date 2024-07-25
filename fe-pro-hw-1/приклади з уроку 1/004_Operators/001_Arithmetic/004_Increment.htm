@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+      Інкремент — операція, яка у багатьох мовах програмування використовується
+        збільшення значення змінної на одиницю.
+
+        Є префіксна та постфіксна форма інкременту.
+        Префіксний інкремент виконується перед використанням змінної.
+        Постфіксний інкремент виконується після використання змінної.
+
+-->
+
+        <script>
+
+                var a = 9;
+        
+                document.write("Постфиксный инкремент <br />");
+                document.write(a + "<br />");    // 9
+                a++; // 9
+                document.write(a + "<br />");   // 10
+                document.write(a++ + "<br />"); // 10 
+                document.write(a + "<br />");   // 11
+        
+                document.write("<hr/>");
+          
+                document.write("Префиксный инкремент <br />");
+                document.write(a + "<br />");   // 11
+                ++a; // 12
+                document.write(a + "<br />");  // 12 
+                document.write(++a + "<br />"); // 13
+                document.write(a + "<br />"); // 13
+
+                console.group()
+                a = 9; 
+                console.log(++a + 2) //12  (++a === a = a + 1)  a = a + 1 |   a + 2
+                console.log(a) // 10 
+                console.log(++a) // 11
+                console.groupEnd()
+        
+            </script>
+</body>
+</html>
