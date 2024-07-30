@@ -1,0 +1,55 @@
+﻿<!--
+
+        Массивы бывают многомерными, 
+        для этого в каждый элемент массива следует расположить еще один массив. 
+        Таким образом возможно реализовать n-мерный массив.
+
+-->
+
+<html>
+<head>
+    <title>Двумерная матрица</title>
+
+    <script type="text/javascript">
+        
+        // Создание многомерного массива.
+        const table = new Array(10);
+
+        for (let i = 0; i < table.length; ++i) { // В таблице 10 строк
+            table[i] = new Array(10);            // В каждой строке 10 столбцов
+        }
+
+
+        // Инициализация массива.
+        for (let row = 0; row < table.length; row++) {
+            for (let col = 0; col < table[row].length; col++) {
+                if ((row + col) % 2 == 1)
+                 document.write(table[row][col] = `<span style='background-color:red; font-size:1.5em'>&#10059;</span>`)
+                 //   table[row][col] = "<span style='background-color:red; font-size:1.5em'>&#10059;</span>";
+                else  
+                document.write(table[row][col] = `<span style='background-color:green; font-size:1.5em'>&#9728;</span>`)
+                    
+                //document.write(table[row][col]); //вывод заполненой ячейки сразу
+            }
+            document.write("<br/>");//разрыв строки
+        }
+
+
+        var prod = table[6][5];
+        document.write(prod)
+
+
+        const arr = [
+            [1,2,3],
+            [],
+            []
+        ]
+    
+
+arr[0][1]
+    </script>
+
+</head>
+<body>
+</body>
+</html>
