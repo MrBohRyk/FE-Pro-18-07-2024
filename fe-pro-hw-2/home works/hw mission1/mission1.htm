@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> /* ### Завдання 1: Перевірка числа
+        Напишіть програму, яка приймає число від користувача і перевіряє, чи є воно парним або непарним. Якщо число парне, виведіть "Число парне", якщо непарне - "Число непарне". */
+        let number = prompt("Введіть число", "0");
+        if (number % 2 === 0) {
+            document.write("Число парне");
+        } else {
+            document.write("Число непарне");
+        }
+        document.write("<hr>");
+        /* ### Завдання 2: Перевірка віку
+        Напишіть програму, яка приймає вік користувача і виводить:
+        - "Дитина", якщо вік менше 12 років.
+        - "Підліток", якщо вік від 12 до 18 років.
+        - "Дорослий", якщо вік від 18 до 60 років.
+        - "Пенсіонер", якщо вік більше 60 років. */
+        let age = prompt("Введіть Ваш вік", "0");
+        if (age < 12) {
+            document.write("Дитина");
+        } else if (age < 18) {
+            document.write("Підліток");
+        } else if (age < 60) {
+            document.write("Дорослий");
+        } else {
+            document.write("Пенсіонер");
+        }
+        document.write("<hr>");
+        /* ### Завдання 3: Таблиця множення
+        Напишіть програму, яка виводить таблицю множення для чисел від 1 до 10. Використовуйте вкладені цикли. */
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= 10; j++) {
+                let result = i * j;
+                document.write(`${j} * ${i} = ${result}<br>`);
+            }
+            document.write("<br><br>");
+        }
+        document.write("<hr>");
+        /* ### Завдання 4: Сума чисел
+        Напишіть програму, яка обчислює суму всіх чисел від 1 до заданого користувачем числа. Наприклад, якщо користувач введе 5, програма має вивести 15, оскільки 1+2+3+4+5 = 15. */
+        let userNumber = prompt("Введіть число", "0");
+        let result = 0;
+        for (let i = 1; i <= userNumber; i++) {
+            result += i;
+        }
+        document.write(result);
+        document.write("<hr>");</script>
+</body>
+</html>
