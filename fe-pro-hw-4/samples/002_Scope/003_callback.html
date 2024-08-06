@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+// ES6  (arg) => {      }.
+
+
+
+    const myName = function (name)  {
+      return "My name is " + name;
+    }
+
+    const age = (argument) => {
+      return ` I'm ${argument} years old `
+    }
+
+
+    function broadcaster(text, callback) {
+      const a = text === "Hello" ? "Ivan" : "22"
+      document.write(text, callback(a) + "<br>")
+    }
+
+    broadcaster("Hello", myName)
+    broadcaster("I'm from Kiev.", age)
+
+
+
+
+  </script>
+</body>
+
+</html>

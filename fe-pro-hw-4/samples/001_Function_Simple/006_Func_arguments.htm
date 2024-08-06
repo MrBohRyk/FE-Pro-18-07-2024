@@ -1,0 +1,47 @@
+﻿<!--
+            Простой калькулятор.
+            При вызове функции создается специальный масив содержащий 
+            в себе аргументы, которые были переданы при вызове.
+            У этого массива есть свойство length, в котором хранится 
+            количество аргументов переданых функции.
+
+-->
+
+<html>
+<head>
+    <title>Массив Аргументов arguments</title>
+
+    
+
+</head>
+<body>
+   <header id="header"></header>
+    <script type="text/javascript">
+
+        function max() {//функция показывает максимальное значение аргумента, котороый передан при вызове
+            if(arguments.length <= 0){
+                return
+            }
+            let maxValue = Number.NEGATIVE_INFINITY;//присваеваем изначально минус бесконечность
+            document.write("<p>Number.NEGATIVE_INFINITY = " + maxValue + "<hr/>");
+
+            //перебираем циклом аргументы
+            for (let i = 0; i < arguments.length; i++){
+                // arguments - свойство объекта max - который есть функцией
+                if (arguments[i] > maxValue){
+                       maxValue = arguments[i];
+                }   
+            } 
+
+            
+            //document.getElementById("header").innerHTML = arguments.join("-")
+            return maxValue;
+        }
+
+       const res = max(-33, 33, 777,8547, -666, -22, 888, 25, 78 , 75 , 963);
+
+        document.write("<p>Максимальное значение одного из аргументов функции = " + res);
+
+    </script>
+</body>
+</html>
