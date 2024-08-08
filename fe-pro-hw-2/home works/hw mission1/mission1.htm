@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script> /* ### Завдання 1: Перевірка числа
-        Напишіть програму, яка приймає число від користувача і перевіряє, чи є воно парним або непарним. Якщо число парне, виведіть "Число парне", якщо непарне - "Число непарне". */
+    <script>
+        /* ### Завдання 1: Перевірка числа
+                                                Напишіть програму, яка приймає число від користувача і перевіряє, чи є воно парним або непарним. Якщо число парне, виведіть "Число парне", якщо непарне - "Число непарне". */
         let number = prompt("Введіть число", "0");
         if (number % 2 === 0) {
             document.write("Число парне");
@@ -28,8 +31,10 @@
             document.write("Підліток");
         } else if (age < 60) {
             document.write("Дорослий");
-        } else {
+        } else if (age >= 60) {
             document.write("Пенсіонер");
+        } else {
+            document.write("Ви ввели не правильне значення")
         }
         document.write("<hr>");
         /* ### Завдання 3: Таблиця множення
@@ -50,6 +55,8 @@
             result += i;
         }
         document.write(result);
-        document.write("<hr>");</script>
+        document.write("<hr>");
+    </script>
 </body>
+
 </html>

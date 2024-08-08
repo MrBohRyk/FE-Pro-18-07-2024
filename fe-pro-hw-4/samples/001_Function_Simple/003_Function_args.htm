@@ -1,0 +1,84 @@
+﻿<!--
+
+    Функция может принимать аргументы. При создании функции 
+    можно указать под какими именами в ее теле будут использоваться 
+    значения переданные ей в качестве аргументов.
+
+-->
+
+<html>
+
+<head>
+    <title>Аргументы функции</title>
+
+
+
+</head>
+
+<body>
+
+    <div id="rez"></div>
+    <button id="phone">Обрати телефон</button>
+
+    <script>
+        const a = 10, b = 15;
+        const c = 20;
+        const d = 21;
+
+
+        function sum1() {
+            const result = a + b;
+            document.getElementById("rez").innerHTML = `<p>Sum1 result: ${result} </p>`
+        }
+
+
+
+        function sum2(x1, x2) {
+            const result = x1 + x2;//x1, x2 = undefined => indefined+undefined = NaN
+            document.getElementById("rez").innerHTML += `<p>Sum2 result: ${result} </p>`
+        }
+
+
+
+
+        // Вызов функций.
+
+        sum1(12345);
+
+        sum2(); // Не передаем параметров при вызове.
+        sum2(c, d);//
+        sum2(80, 10)
+        sum2(100, 150, 200)
+
+
+
+
+        document.getElementById("phone").onclick = function () {
+            const phone = prompt("Оберіть модель телефону", "iphone, xiaomi, samsung, nokia");
+
+            if(!phone) {
+                console.error("Модель не обрана!")
+            }else{
+                showSelectPhone(phone)
+            }
+        }
+
+        function showSelectPhone(model) {
+            switch (model) {
+                case "iphone": document.write(`Користувач вибарв ${model}`)
+                    break;
+                case "xiaomi": document.write(`Користувач вибарв ${model}`)
+                    break;
+                case "samsung": document.write(`Користувач вибарв ${model}`)
+                    break;
+                case "nokia": document.write(`Користувач вибарв ${model}`)
+                    break;
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
