@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object.create(null)</title>
+</head>
+
+<body>
+    <script>
+        //Зачастую объекты используют для хранения произвольных значений по ключу, 
+        //как коллекцию
+        const user = new Object([]); // 
+        user.text = "Привет";
+        user.age = 35;
+
+
+
+
+
+        //При дальнейшем поиске в этой коллекции мы найдём не только text и age, 
+        //но и встроенные функции:
+
+        console.dir(user)
+        console.log('...')
+        console.info("...")
+        console.error("text error")
+        console.warn("warn")
+        
+
+        
+
+        //Однако, есть путь и проще:
+        var data = Object.create(null); 
+        
+        console.dir(data)
+
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+﻿<!--
+    Функция конструктор - это функция, которая создает объекты по определенному шаблону (классу).
+    Конструкторы должны вызываться после оператора new.
+    Ключевое слово new создает пустой объект, который в конструкторе будет доступен через ключевое слово this.
+-->
+
+<html>
+
+<head>
+    <title>Пользовательский конструктор</title>
+
+    <script>
+
+        // Функция-конструктор для создания объектов Point.
+
+
+        function Point(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+
+
+        // Создание трех экземпляров класса Point
+        debugger
+        const leftTop =  new Point(0, 0);  // hdsj%$##5
+        const topPoint =   Point(0, 0); //sageg53
+        const rightBottom = new Point(0, 100); // dfjjnds45
+        const obj = rightBottom; // dfjjnds45
+
+        console.log(leftTop.x === rightBottom.x);
+
+        
+    
+
+        // Вывод координат созданых точек
+        document.write("Координаты нашего треугольника:<br /><br />");
+        document.write("Координаты первой точки: " + leftTop.x + " , " + leftTop.y + "<br />");
+        document.write("Координаты первой точки: " + topPoint.x + " , " + topPoint.y + "<br />");
+        document.write("Координаты первой точки: " + rightBottom.x + " , " + rightBottom.y + "<br />");
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

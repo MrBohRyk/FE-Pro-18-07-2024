@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Функция-конструктор Rectangle</title>
+
+    <script type="text/javascript">
+
+        function Rectangle(w, h) {
+            this.width = w;
+            this.height = h;
+
+            // метод
+            this.getArea = function () {
+                return this.width * this.height;
+            }
+        }
+
+
+        const rect = new Rectangle(200, 500);
+
+      
+
+    
+        document.write("Площадь прямоугольника " + rect.getArea());
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

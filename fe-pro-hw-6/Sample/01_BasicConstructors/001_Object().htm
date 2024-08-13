@@ -1,0 +1,42 @@
+﻿<!--
+    Объект – это составной тип данных, он объединяет множество значений в единый модуль 
+    и позволяет сохранять и извлекать значения по их именам.
+    Самым простым способом создания обьекта является использование конструктора Object()
+
+    constructor === class 
+-->
+
+<html>
+<head>
+    <title>Конструктор Object()</title>
+
+    <script>
+        
+        const user = new Object(); 
+        const user1 = {};
+
+        user.toString = function () {
+           return "Hello world!"
+        }
+
+        document.write(user)  // [Object object]
+        
+     
+
+        // добавление свойства x 
+        user.name = "Ivan";
+        // добавление свойства y 
+        user.lastname = "ivanov";
+        
+    
+
+        // обращение к свойствам объекта
+        document.write(`Значение свойства x:  ${user.name} <br />`);
+        document.write("Значение свойства y:" + user.lastname + "<br />");
+       
+    </script>
+
+</head>
+<body>
+</body>
+</html>

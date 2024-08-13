@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+    <title>Пользовательский конструктор 2</title>
+
+    <script type="text/javascript">
+
+        // Функция-конструктор для создания объектов Human.
+
+        function Human(name) {
+            // свойство
+            this.firstName = name;
+
+            // метод - свойство объекта, которое содежит значение в виде функции.
+            this.sayHello = function () {
+                document.write("Hello! My name is " + this.firstName + "<br /> ");
+            }
+        }
+
+        // Создание двух экземпляров типа Human
+
+        const h = new Human("Homer");
+        const a = new Human("Alex");
+        
+
+
+        // Вызов метода SayHello() на созданых обьектах. 
+ 
+        a.sayHello();
+      
+    </script>
+
+</head>
+<body>
+</body>
+</html>
