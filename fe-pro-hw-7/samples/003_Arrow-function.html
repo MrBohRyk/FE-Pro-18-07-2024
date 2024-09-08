@@ -1,0 +1,115 @@
+<script>
+    //страрый способ создания функции
+    /*
+    function name () {
+
+    }
+
+    var name1 = function () {
+
+    }
+
+    (function () {
+
+    })()
+
+    (function(){
+        return 2  + 2
+    }())
+
+    const a = (a,a1,a3) => {
+
+
+        return ""
+    }
+
+    const fNname = () => {
+    
+    }
+
+    const a1 = x => {
+        return ""
+    }
+
+    function q (x) {
+        return x * x
+    }
+
+    const q=x=>x*x;
+    */
+    /*
+function square (){
+    console.log(arguments);
+}
+
+
+const square = (arg1) => {
+    console.log(arg1);
+}
+
+const square1 = arg1 => console.log(arg1);
+
+() => {
+
+}
+
+x => x * x 
+
+
+
+square(1,3,6,6)
+square(1,3,6,6,5,3254,436356)
+square(1,)
+
+
+
+
+
+
+// новый способ, функция стрелка (аргумент) => { тело выполнения функции}
+const _square = x => x * x; 
+
+
+*/
+
+const arr = [-22, 45, 5 ,333, -5, 10, -75];
+
+arr.forEach(()=>{})
+arr.map((a)=>{
+    return a * 5
+})
+
+
+
+arr.filter(function (item) {
+   return item > 0
+})
+
+
+const data = arr.filter((item)=> item < 0)
+
+
+document.write(data)
+
+    const greeter = {
+
+        fn : function () {
+
+        },
+        greet(name) {
+            console.log("Hello", name)
+        },
+
+        greetAll(names) {
+            names.forEach(name => {
+                //console.log(this)
+                this.greet(name)
+            });
+        }
+    }
+
+
+
+    greeter.greetAll(['Ivan', 'Vasya', 'Roman'])
+
+</script>

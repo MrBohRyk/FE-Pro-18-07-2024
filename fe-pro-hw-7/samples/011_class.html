@@ -1,0 +1,55 @@
+<script>
+    class Animal {
+        constructor(name, voice) {
+            //свойства экземпляра
+            this.name = name;
+            this.voice = voice;
+        }
+        //метод на прототипе
+        sey() {
+            console.log(`${this.name}  може ${this.voice} `)
+        }
+    }
+
+
+    class Bird extends Animal {
+        //extends Animal наследовать свойства от  Animal
+        constructor(canFly) {
+            super(name, voice)
+            this.canFly = canFly;
+            this.canFly = canFly
+        }
+    }
+
+    const obj1 = new Bird('Гуска', 'Крякти', true)
+
+    console.log(obj1.sey())
+
+
+
+
+/*
+    class Name1 {
+        constructor(name) {
+            this.name = name
+        }
+
+        getName () {
+             return `Користувача звати: ${this.name}`
+        }
+    }
+
+    function Name(name) {
+        this.name = name
+    }
+
+    Name.prototype.getName = function () {
+        return `Користувача звати: ${this.name}`
+    }
+
+    const user1 = new Name1("Ivan");
+    const user2 = new Name("Ivan");
+    */
+
+
+</script>

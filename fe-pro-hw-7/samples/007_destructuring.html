@@ -1,0 +1,55 @@
+<script>
+const user =  {
+   name : "Ivan",
+   suname : "Ivanov",
+   tel : {
+     one : "0994237855",
+     two : "3285489502"
+   },
+   age : 50
+}
+// Перебор объекта, возвращает массив с ключои и значением в массиве
+
+
+const {name, tel, ...allPros} = user;
+
+/*
+const name = user.name;
+const tel = user.tel
+const allPros = {
+  suname : user.suname,
+  age : user.age
+}
+*/
+
+
+//console.log(other);
+
+const arr = [1, 1, 2, 8, 9, 'la la la']
+
+const [a, b, c, ...others ] = arr;
+
+/*
+const a = arr[0]
+const b = arr[1]
+const c = arr[2]
+const others = [
+   8, 9, 'la la la'
+]
+   */
+
+
+   function userInfo ({name, tel}) {
+    if(!tel) return;
+    
+    let {tel1, tel2} = tel
+    console.log(`Вітаємо ${name}. Ваш номер телефону ${tel1} переміг у змаганні.`);
+   }
+
+   userInfo(user)
+
+
+
+
+
+</script>

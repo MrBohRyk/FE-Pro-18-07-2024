@@ -1,0 +1,34 @@
+<script>
+const name = "1234";
+const age = 25;
+
+//Если переменные совпадают с именами свойства, то записть объекта можно сократить
+
+const user = {
+    name,
+    age,
+    //method
+     sey(){
+       console.log(`user ${name} ${age}` )
+    }
+
+}
+/**/
+// Поверхностня копия объекта
+
+const defaults = {
+    host : "localhast",
+    dbName : "blog",
+    user : "admin"
+}
+
+const opts = {
+    user : "Ivan",
+    password : "123456789"
+}
+// Object.assign( Объект который нужно перезаписать и вернуть, обьекты с которых взять информацию)
+const newData = Object.assign({}, opts,defaults )
+
+
+console.log(newData)
+</script>
