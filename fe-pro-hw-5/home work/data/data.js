@@ -1,4 +1,4 @@
-const exchangeRates = {
+const exchangeRatesShow = {
   date: "01.07.2024",
   bank: "PB",
   baseCurrency: 980,

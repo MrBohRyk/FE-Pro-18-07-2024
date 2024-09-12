@@ -3,24 +3,22 @@ rate (ставка за день роботи), days (кількість від�
 Також клас повинен мати метод getSalary(), який виводитиме зарплату працівника.
 Зарплата - це добуток (множення) ставки rate на кількість відпрацьованих днів days.*/
 
+// Конструктор Worker
 function Worker(name, surname, rate, days) {
   this.name = name;
   this.surname = surname;
   this.rate = rate;
   this.days = days;
-
-  this.getSalary = function () {
-    return this.rate * this.days;
-  };
 }
 
-// Створення об'єкта Worker
+Worker.prototype.getSalary = function () {
+  return this.rate * this.days;
+};
+
 const worker = new Worker("Іван", "Петренко", 100, 22);
 
-// Знаходимо елемент на сторінці
 const workerInfoElement = document.getElementById("worker-info");
 
-// Виводимо інформацію на сторінку
 workerInfoElement.textContent = `Зарплата працівника ${worker.name} ${
   worker.surname
 } складає ${worker.getSalary()} гривень.`;

@@ -9,33 +9,28 @@
 */
 
 function createNewUser() {
-  // Запрошуємо ім'я, прізвище та дату народження у користувача
   const firstName = prompt("Введіть ваше ім'я:");
   const lastName = prompt("Введіть ваше прізвище:");
   const birthday = prompt("Введіть вашу дату народження (dd.mm.yyyy):");
 
-  // Створюємо об'єкт newUser
   const newUser = {
     firstName: firstName,
     lastName: lastName,
     birthday: birthday,
 
-    // Метод для обчислення віку
     getAge() {
       const dateParts = this.birthday.split(".");
-      // Перевірка правильності формату дати
       if (dateParts.length !== 3) {
         console.error("Неправильний формат дати");
         return "Невідомо";
       }
 
       const [day, month, year] = dateParts;
-      const birthDate = new Date(year, month - 1, day); // Дата народження
-      const today = new Date(); // Поточна дата
+      const birthDate = new Date(year, month - 1, day);
+      const today = new Date();
       let age = today.getFullYear() - birthDate.getFullYear();
       const m = today.getMonth() - birthDate.getMonth();
 
-      // Якщо місяць і день народження ще не минули цього року
       if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
       }
@@ -43,10 +38,8 @@ function createNewUser() {
       return age;
     },
 
-    // Метод для генерації пароля
     getPassword() {
       const dateParts = this.birthday.split(".");
-      // Перевірка правильності формату дати
       if (dateParts.length !== 3) {
         console.error("Неправильний формат дати");
         return "Невідомо";
@@ -60,21 +53,17 @@ function createNewUser() {
       );
     },
 
-    // Метод для генерації логіна
     getLogin() {
       return (
         this.firstName.charAt(0).toLowerCase() + this.lastName.toLowerCase()
       );
     },
   };
-
-  // Повертаємо об'єкт
   return newUser;
 }
 
 // Створюємо користувача
 document.addEventListener("DOMContentLoaded", function () {
-  // Тут код вашої функції
   const user = createNewUser();
 
   const login = user.getLogin();

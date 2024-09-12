@@ -1,11 +1,11 @@
-let funcCall = 0
+let funcCall = 0;
 
 function funcCallCalc() {
-    return ++funcCall
+  return ++funcCall;
 }
 funcCallCalc();
 funcCallCalc();
 funcCallCalc();
 funcCallCalc();
 funcCallCalc();
-document.write(funcCallCalc())
+document.write(funcCallCalc());

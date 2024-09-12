@@ -1,4 +1,4 @@
-const a = 2;
+const a = -2;
 let ggg;
 if (a > 0) {
     ggg = function() {
