@@ -20,7 +20,7 @@ function createNewUser() {
     lastName: lastName,
 
     getLogin() {
-      return (
+      return ( 
         this.firstName.charAt(0).toLowerCase() + this.lastName.toLowerCase()
       );
     },
